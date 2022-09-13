@@ -1,4 +1,4 @@
-# Black-Hat-Python
+# Black-Hat-Python （Python黑帽子 黑客与渗透测试编程之道）
 Black Hat Python, 2nd Edition - Justin Seitz & Tim Arnold 
 
 Python's code from "Black Hat Python, 2nd Edition - Justin Seitz & Tim Arnold "
