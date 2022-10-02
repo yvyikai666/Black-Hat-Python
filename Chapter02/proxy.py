@@ -3,13 +3,15 @@ import sys
 import socket
 import threading
 
+# 这个是个布尔短路，类似于三元表达式吧。
 HEX_FILTER = ''.join(
     [(len(repr(chr(i))) == 3) and chr(i) or '.' for i in range(256)])
 
 
 def hexdump(src, length=16, show=True):
+    """接收bytes或string类型输入转换成十六进制数并输出"""
     if isinstance(src, bytes):
-        src = src.decode()
+        src = src.decode()  # bytes类型先要解码成string类型
     results = list()
     for i in range(0, len(src), length):
         word = str(src[i:i + length])
